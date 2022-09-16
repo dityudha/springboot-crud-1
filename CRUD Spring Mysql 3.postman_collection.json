@@ -1,0 +1,164 @@
+{
+	"info": {
+		"_postman_id": "608cf0be-789f-43fb-aa5e-95f54cdc41cc",
+		"name": "CRUD Spring Mysql 3",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "7502499"
+	},
+	"item": [
+		{
+			"name": "create bikes",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\t\"brand\": \"Bimota\",\r\n\t\"type\": \"Tesi H4\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/bikes",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"bikes"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "update bikes",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"brand\": \"Ducati\",\r\n\t\"type\": \"Monster 795\",\r\n    \"sold\": true\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/bikes/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"bikes",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get bikes",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\t\"brand\": \"Ducati\",\r\n\t\"type\": \"Monster 795\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/bikes",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"bikes"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get bikes by id",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\t\"brand\": \"Ducati\",\r\n\t\"type\": \"Monster 795\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/bikes/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"bikes",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete bikes",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\t\"brand\": \"Ducati\",\r\n\t\"type\": \"Monster 795\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/bikes/4",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"bikes",
+						"4"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
