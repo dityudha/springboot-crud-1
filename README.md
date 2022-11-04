@@ -1,4 +1,4 @@
-# Getting Started with django REST API with react
+# Getting Started Java Spring Boot CRUD Operation
 Technology used for this project:
 <br/>
 **Java** is a high-level, class-based, object-oriented programming language that is designed to have as few implementation dependencies as possible.
